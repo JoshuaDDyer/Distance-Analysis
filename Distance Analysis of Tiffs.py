@@ -40,6 +40,7 @@ for i,filename in enumerate(filename_list):
 # Switch axis describing no. z-stacks with axis describing channels - easier slicing
     mydatareshaped = np.moveaxis(mydata,0,1)
     print (mydatareshaped.shape)
+    print("The data now has shape")
 #split channels 
     channel1 = mydatareshaped[0]
     channel2 = mydatareshaped[1]
